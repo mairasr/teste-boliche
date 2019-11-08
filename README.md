@@ -15,13 +15,14 @@ No décimo quadro, um jogador que faz um spare ou strike pode rolar bolas extra 
 Criar uma solução para controlador os pontos dos jogos de boliche utilizando as tecnologias Java 8, Spring Boot, Junit, JMS/AMQP e Maven, com três integrações:
 
 1. Consumir de uma fila a informação em formato JSON de quantos pinos um jogador derrubou com a bola lançada e em qual pista ele esta jogando:
-```
+```javascript
 {"name":"João", "pins":6, "alley":"01", "date":"2019/06/01 15:35"}
 ```
 2. Disponibilizar uma interface Rest que retorna o placar atual do jogo em andamento em uma das pistas:
-```
+```python
 GET http://[host]:[port]/game/[alley]/score
-
+```
+```javascript
 { 
     "alley":"01",
     "last_game":"2019/06/01 10:35",
@@ -121,7 +122,7 @@ GET http://[host]:[port]/game/[alley]/score
 }
 ```
 3. Disponibilizar um interface REST para zerar/limpar o jogo atual na pista:
-```
+```python
 DELETE http://[host]:[port]/game/[alley]
 ```
 ## Requisitos funcionais:
@@ -147,6 +148,7 @@ DELETE http://[host]:[port]/game/[alley]
 
 ## Instruções gerais
 
+- Faça um fork desse repositório e efetue um pull request para entrega.
 - São de livre escolha qual fila e banco de dados devem ser utilizados.
-- Para entregas que necessite de uma execução local, informe todos os passos para criação dos objetos, configuração e execução para submeter os testes e validação da solução. Lembrando que solução é Spring Boot.
+- Para entregas que necessite de uma execução local, crie um setup.md informando todos os passos para criação dos objetos, configuração e execução para submeter os testes e validação da solução. Lembrando que solução é Spring Boot.
 - Para entregas em Cloud informar as URLs de acesso, usários e senhas (caso necessário).
