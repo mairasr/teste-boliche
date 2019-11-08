@@ -1,7 +1,5 @@
 # Controlador de pontos - Jogos de Boliche
 
-## Contexto
-
 <p align="center"><img src="https://jogarboliche.com.br/wp-content/uploads/2018/09/como-jogar-boliche-score.jpg" /></p>
 
 O contador de pontos de um jogador no [jogo de Boliche](https://jogarboliche.com.br/como-jogar-boliche/) consiste em 10 quadros, como mostrado acima. Em cada quadro o jogador possui duas oportunidades de derrubar 10 pinos. A pontuação para o quadro é o número total de pinos derrubados, além de bônus por strikes e spares.
@@ -142,13 +140,13 @@ DELETE http://[host]:[port]/game/[alley]
 
 ## Requisitos não funcionais desejaveis:
 
-- [ ] **RND01.** Solução totamente em Cloud
+- [ ] **RND01.** Solução totalmente em Cloud
 - [ ] **RND02.** Execução em Docker/Kubernetes
 - [ ] **RND03.** Utilização de banco de dados NoSQL
 - [ ] **RND04.** Divisão da solução em microsserviços
 
 ## Instruções gerais
 
-- A escolha do banco de dados e fila são de livre escolha.
+- São de livre escolha qual fila e banco de dados devem ser utilizados.
 - Para entregas que necessite de uma execução local, informe todos os passos para criação dos objetos, configuração e execução para submeter os testes e validação da solução. Lembrando que solução é Spring Boot.
 - Para entregas em Cloud informar as URLs de acesso, usários e senhas (caso necessário).
