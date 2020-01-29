@@ -128,8 +128,8 @@ DELETE http://[host]:[port]/game/[alley]
 ```
 ## Requisitos funcionais:
 
-- [ ] **RF1.** As informações da jogada caso seja a primeira jogada para uma pista que não existia, essa nova pista deve ser criada.
-- [ ] **RF2.** As informações da jogada a pontação do quadro deve ser calculado conforme regras do jogo. Caso a pontuação do quadro dependa das próximas bolas jogadas o campo score deve mostra a pontuação parcial.
+- [ ] **RF1.** Ao receber a primeira jogada para uma pista que não existia, essa nova pista deve ser criada.
+- [ ] **RF2.** Ao receber as informações da jogada a pontação do quadro deve ser calculado conforme regras do jogo. Caso a pontuação do quadro dependa das próximas bolas jogadas o campo score deve mostra a pontuação parcial.
 - [ ] **RF3.** Jogadas recebidas para um jogador que ultrapassem o limite estabelecido pelo jogo devem ser descartadas.
 - [ ] **RF4.** Quando um jogo for zerado/reiniado a pista deve ser apagada.
 
